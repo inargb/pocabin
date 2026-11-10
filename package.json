@@ -1,0 +1,19 @@
+{
+  "name": "pocabin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pocabin — binder digital de cards com repositório de imagens",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm:dev -w backend\" \"npm:dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w backend",
+    "seed": "npm run seed -w backend",
+    "test": "npm test -w backend",
+    "lint": "npm run lint -w frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": { "node": ">=20" }
+}
