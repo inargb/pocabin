@@ -4,6 +4,10 @@ Binder digital para organizar coleções de cards (photocards de K-pop, Pokémon
 
 O frontend nasceu do protótipo feito no Claude Design (`design/binder-organizer.html`, guardado como referência visual) e foi convertido em um app React de verdade, agora persistindo tudo numa API.
 
+## Regras de desenvolvimento
+
+Toda mudança no projeto segue as regras obrigatórias de [`AGENTS.md`](AGENTS.md) (lidas automaticamente pelo Claude Code via `CLAUDE.md`).
+
 ## Estrutura
 
 ```
